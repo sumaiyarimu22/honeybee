@@ -35,6 +35,7 @@ body {
   position: fixed;
   width: 100%;
   bottom: 30px;
+  z-index: 100;
 }
 
 .nav {
@@ -242,7 +243,120 @@ body {
   background-image: url(../assets/images/happyness/bluebg.png);
 
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 8px 0 100px 0;
+  text-align: center;
+}
+.happyness_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 1rem;
+  text-align: center;
+  width: 100vw;
+  height: 70%;
+}
+.happyness_content > .happyness_title {
+  font-family: "Agrandir-TextBold";
+  text-transform: uppercase;
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 49.8px;
+}
+.happyness_content span {
+  outline: white;
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  text-stroke: 1px #ffffff;
+}
+.happyness_content .name {
+  color: white;
+  margin-bottom: 20px;
+  font-family: "AvenirNextlight" !important;
+  font-size: 18px;
+}
+.how-btn {
+  display: inline-block;
+  background-color: #fff;
+  border: 5px solid #eeaf30;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: var(--text-color);
+  font-family: "Agrandir-TextBold";
+  font-size: 18px !important;
+  font-weight: 800;
+  line-height: 19.8px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: -8px 8px 0px 0px #3061ab;
+}
+
+/* bottom marque */
+
+.main_head_content_blue {
+  background: #29446d;
+  margin-bottom: 0px;
+
+  padding: 20px 0px;
+}
+.main_head_content_orange {
+  width: 100%;
+  padding: 20px 0px;
+  background: #ee7430;
+  transform: rotate(-2deg);
+  position: relative;
+  z-index: 2;
+}
+.main_head_content_blue h1,
+.main_head_content_orange p {
+  font-size: 55px;
+  outline: white;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-stroke: 1px #ffffff;
+  letter-spacing: -4px;
+  font-family: "Agrandir-TextBold";
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  justify-content: space-between;
+  display: inline-block;
+  animation: marque 20s linear infinite;
+  animation-fill-mode: forwards;
+}
+
+.main_head_content_blue h1,
+.main_head_content_orange p {
+  display: flex;
+  white-space: nowrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+@keyframes marque {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.belive {
+  background-image: url(../assets/images/belive/third-bg.png);
+
+  width: 100vw;
+  height: 150vh;
   position: relative;
   background-position: center;
   background-size: cover;
