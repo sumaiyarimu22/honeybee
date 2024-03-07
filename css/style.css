@@ -9,12 +9,12 @@
   /* Update the path based on your file structure and font format */
 }
 @font-face {
-  font-family: myFirstFont;
+  font-family: "myFirstFont";
   src: url(`../assets/fonts/Agrandir\ -\ Free\ For\ Personal\ Use/!important`);
 }
 
 @font-face {
-  font-family: GrandHeavy;
+  font-family: "GrandHeavy";
   src: url("../assets/fonts/Agrandir - Free For Personal Use/Agrandir-GrandHeavy.otf");
 }
 
